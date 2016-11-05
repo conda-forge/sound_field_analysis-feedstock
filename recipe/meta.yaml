@@ -1,6 +1,6 @@
-{% set version = "0.1.dev0" %}
+{% set version = "0.2" %}
 {% set pckname = "sound_field_analysis" %}
-{% set sha256 = "b159c27ea0ac15962bb596172827eddacf492298b78580b21e9587c1ea2436ac" %}
+{% set sha256 = "f8d52d3b67fff6d9a92508552e698dadb0100d202f2d6805356007a9dcdaae4f" %}
 
 package:
   name: {{ pckname }}
