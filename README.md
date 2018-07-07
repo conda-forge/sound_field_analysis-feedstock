@@ -20,14 +20,15 @@ generated to evaluate the implemented functions.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/sound_field_analysis-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/sound_field_analysis-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/sound_field_analysis-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/sound_field_analysis-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/sound_field_analysis-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/sound-field-analysis-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/sound_field_analysis-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/sound_field_analysis-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sound_field_analysis/badges/version.svg)](https://anaconda.org/conda-forge/sound_field_analysis)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sound_field_analysis/badges/downloads.svg)](https://anaconda.org/conda-forge/sound_field_analysis)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-sound_field_analysis-green.svg)](https://anaconda.org/conda-forge/sound_field_analysis) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sound_field_analysis.svg)](https://anaconda.org/conda-forge/sound_field_analysis) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sound_field_analysis.svg)](https://anaconda.org/conda-forge/sound_field_analysis) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sound_field_analysis.svg)](https://anaconda.org/conda-forge/sound_field_analysis) |
 
 Installing sound_field_analysis
 ===============================
@@ -72,6 +73,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
