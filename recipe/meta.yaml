@@ -1,6 +1,6 @@
-{% set version = "0.3" %}
+{% set version = "2021.2.4" %}
 {% set pckname = "sound_field_analysis" %}
-{% set sha256 = "7a5887e94e268c2bb63b141b811f68c2a94d11692a6817e310c92d919500fe07" %}
+{% set sha256 = "8b48737ac254eb684a51f52bc542a38e2d862477b69c3430b66f8fc5dcbe6c2a" %}
 
 package:
   name: {{ pckname }}
@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -34,7 +34,7 @@ test:
 about:
   home: https://github.com/QULab/sound_field_analysis-py/
   license: GPL-3.0
-  summary: 'Analyze, visualize and process sound field data recorded by spherical microphone arrays'
+  summary: Analyze, visualize and process sound field data recorded by spherical microphone arrays
   description: |
     The sound_field_analysis toolbox (short: sfa) is a Python port
     of the Sound Field Analysis Toolbox (SOFiA) toolbox, originally
