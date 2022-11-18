@@ -1,6 +1,6 @@
-{% set version = "0.3" %}
+{% set version = "2020.1.30" %}
 {% set pckname = "sound_field_analysis" %}
-{% set sha256 = "7a5887e94e268c2bb63b141b811f68c2a94d11692a6817e310c92d919500fe07" %}
+{% set sha256 = "3cd7a98913f9489aa2900a14a97ed8b3b56cb827b66fe60b3dc41a77bfc5d97a" %}
 
 package:
   name: {{ pckname }}
@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
