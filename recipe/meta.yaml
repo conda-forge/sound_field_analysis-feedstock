@@ -34,8 +34,9 @@ test:
     - sound_field_analysis
 
 about:
-  home: https://github.com/QULab/sound_field_analysis-py/
-  license: GPL-3.0
+  home: https://github.com/AppliedAcousticsChalmers/sound_field_analysis-py/
+  license: MIT
+  license_file: LICENSE
   summary: 'Analyze, visualize and process sound field data recorded by spherical microphone arrays'
   description: |
     The sound_field_analysis toolbox (short: sfa) is a Python port
@@ -44,8 +45,8 @@ about:
     analyze, visualize and process sound field data recorded by spherical
     microphone arrays. Furthermore, various types of testdata may be
     generated to evaluate the implemented functions.
-  doc_url: https://qulab.github.io/sound_field_analysis-py/
-  dev_url: https://github.com/QULab/sound_field_analysis-py/
+  doc_url: https://appliedacousticschalmers.github.io/sound_field_analysis-py/
+  dev_url: https://github.com/AppliedAcousticsChalmers/sound_field_analysis-py/
 
 extra:
   recipe-maintainers:
