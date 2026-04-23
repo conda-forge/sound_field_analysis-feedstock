@@ -8,32 +8,34 @@ package:
 
 source:
   fn: {{ pckname }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/s/{{ pckname }}/{{ pckname }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/s/{{ pckname }}/{{ pckname }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 2
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python {{ python_min }}
     - setuptools
   run:
-    - python
+    - python >={{ python_min }}
     - numpy
     - scipy
     - plotly
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - sound_field_analysis
 
 about:
-  home: https://github.com/QULab/sound_field_analysis-py/
-  license: GPL-3.0
+  home: https://github.com/AppliedAcousticsChalmers/sound_field_analysis-py/
+  license: MIT
   summary: 'Analyze, visualize and process sound field data recorded by spherical microphone arrays'
   description: |
     The sound_field_analysis toolbox (short: sfa) is a Python port
@@ -42,8 +44,8 @@ about:
     analyze, visualize and process sound field data recorded by spherical
     microphone arrays. Furthermore, various types of testdata may be
     generated to evaluate the implemented functions.
-  doc_url: https://qulab.github.io/sound_field_analysis-py/
-  dev_url: https://github.com/QULab/sound_field_analysis-py/
+  doc_url: https://appliedacousticschalmers.github.io/sound_field_analysis-py/
+  dev_url: https://github.com/AppliedAcousticsChalmers/sound_field_analysis-py/
 
 extra:
   recipe-maintainers:
